@@ -1,0 +1,1052 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5faf9;
+    color: #263b39;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4aa89c;
+}
+
+.logo span {
+    color: #8171bd;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #405451;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #4aa89c;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    gap: 50px;
+}
+
+.small-title {
+    color: #8171bd;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #4aa89c;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #61706d;
+    margin-bottom: 30px;
+}
+
+.btn-daftar {
+    border: none;
+    background: #8171bd;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-daftar:hover {
+    background: #6959a5;
+    transform: translateY(-2px);
+}
+
+/* HERO CARD */
+
+.hero-card {
+    width: 360px;
+    min-height: 350px;
+    background: white;
+    border-radius: 30px;
+    padding: 50px 35px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(74, 168, 156, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-card h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero-card p {
+    color: #687875;
+    line-height: 1.6;
+}
+
+/* =========================
+   LAYANAN
+========================= */
+
+.layanan {
+    background: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.layanan h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.layanan-subtitle {
+    color: #71817e;
+    margin-bottom: 45px;
+}
+
+.layanan-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.layanan-card {
+    width: 300px;
+    padding: 35px 25px;
+    background: #f7fbfa;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.layanan-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    border-radius: 18px;
+    background: #e1f3ef;
+    color: #4aa89c;
+    font-size: 32px;
+    line-height: 65px;
+}
+
+.layanan-card h3 {
+    margin-bottom: 12px;
+}
+
+.layanan-card p {
+    color: #71817e;
+    line-height: 1.6;
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .layanan {
+        padding: 60px 5%;
+    }
+
+}
+
+/* =========================
+   FORM PENDAFTARAN
+========================= */
+
+.form-section {
+    min-height: calc(100vh - 75px);
+    padding: 60px 20px;
+    background: #f5faf9;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 45px 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(74, 168, 156, 0.12);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.form-header h1 {
+    font-size: 35px;
+    margin: 10px 0 15px;
+    color: #263b39;
+}
+
+.form-header > p:last-child {
+    color: #71817e;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #405451;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d8e5e2;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4aa89c;
+    box-shadow: 0 0 0 3px rgba(74, 168, 156, 0.12);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+
+/* Tombol form */
+
+.form-container .btn-daftar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* Tampilan HP */
+
+@media (max-width: 768px) {
+
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .form-header h1 {
+        font-size: 28px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+    .btn-daftar {
+        display: inline-block;
+        text-decoration: none;
+}
+
+/* =========================
+   HALAMAN BERHASIL
+========================= */
+
+.success-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #f5faf9;
+}
+
+.success-card {
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    padding: 55px 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(74, 168, 156, 0.12);
+}
+
+.success-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #dff4ef;
+    color: #4aa89c;
+    font-size: 55px;
+    line-height: 90px;
+    font-weight: bold;
+}
+
+.success-card h1 {
+    color: #263b39;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.success-card p {
+    color: #71817e;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.success-card .btn-daftar {
+    margin-top: 25px;
+}
+/* =========================
+   HALAMAN TENTANG
+========================= */
+
+.about-section {
+    min-height: 550px;
+    padding: 80px 10%;
+    background: #f5faf9;
+    display: flex;
+    align-items: center;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.about-text {
+    max-width: 650px;
+}
+
+.about-text h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    color: #263b39;
+    margin: 10px 0 25px;
+}
+
+.about-text h1 span {
+    display: block;
+    color: #4aa89c;
+}
+
+.about-text p:not(.small-title) {
+    color: #61706d;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* Kartu sebelah kanan */
+
+.about-card {
+    width: 350px;
+    min-height: 330px;
+    background: white;
+    border-radius: 30px;
+    padding: 45px 35px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(74, 168, 156, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+    background: #dff4ef;
+    color: #4aa89c;
+
+    font-size: 60px;
+    line-height: 85px;
+    font-weight: bold;
+}
+
+.about-card h2 {
+    color: #263b39;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #71817e;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TUJUAN PROGRAM
+========================= */
+
+.tujuan-section {
+    background: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.tujuan-section > h2 {
+    font-size: 35px;
+    color: #263b39;
+    margin: 10px 0 45px;
+}
+
+.tujuan-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.tujuan-card {
+    width: 300px;
+    padding: 35px 25px;
+    background: #f7fbfa;
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.tujuan-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tujuan-card .icon {
+    margin-bottom: 20px;
+}
+
+.tujuan-card h3 {
+    color: #263b39;
+    margin-bottom: 12px;
+}
+
+.tujuan-card p {
+    color: #71817e;
+    line-height: 1.6;
+}
+
+/* =========================
+   TENTANG - HP
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 60px 5%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 36px;
+    }
+
+    .about-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .tujuan-section {
+        padding: 60px 5%;
+    }
+
+}
+
+/* =========================
+   HALAMAN LAYANAN
+========================= */
+
+.layanan-header {
+    text-align: center;
+    padding: 80px 20px 50px;
+    background: #f5faf9;
+}
+
+.layanan-header h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    color: #263b39;
+    margin: 10px 0 20px;
+}
+
+.layanan-header h1 span {
+    color: #4aa89c;
+}
+
+.layanan-header > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #71817e;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Kartu layanan */
+
+.layanan-page {
+    background: white;
+    padding: 50px 10% 90px;
+}
+
+.layanan-page-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.layanan-page-card {
+    position: relative;
+    width: 330px;
+    padding: 40px 30px;
+    background: #f7fbfa;
+    border-radius: 22px;
+    text-align: center;
+    border: 1px solid #e5f0ed;
+    transition: 0.3s;
+}
+
+.layanan-page-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(74, 168, 156, 0.12);
+}
+
+.layanan-number {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #8171bd;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.layanan-page-card .icon {
+    margin: 10px auto 22px;
+}
+
+.layanan-page-card h2 {
+    color: #263b39;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.layanan-page-card p {
+    color: #71817e;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.layanan-page-card .btn-daftar {
+    padding: 12px 22px;
+    font-size: 14px;
+}
+
+
+/* Tampilan HP */
+
+@media (max-width: 768px) {
+
+    .layanan-header {
+        padding: 60px 5% 40px;
+    }
+
+    .layanan-header h1 {
+        font-size: 36px;
+    }
+
+    .layanan-page {
+        padding: 40px 5% 70px;
+    }
+
+    .layanan-page-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+
+/* =========================
+   HALAMAN KONTAK
+========================= */
+
+.kontak-header {
+    text-align: center;
+    padding: 75px 20px 45px;
+    background: #f5faf9;
+}
+
+.kontak-header h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    color: #263b39;
+    margin: 10px 0 20px;
+}
+
+.kontak-header h1 span {
+    display: block;
+    color: #4aa89c;
+}
+
+.kontak-header > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #71817e;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Bagian kontak */
+
+.kontak-section {
+    background: white;
+    padding: 60px 10% 90px;
+}
+
+.kontak-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+
+/* Informasi kontak */
+
+.kontak-info {
+    flex: 1;
+}
+
+.kontak-info h2,
+.kontak-form h2 {
+    color: #263b39;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.kontak-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.kontak-icon {
+    min-width: 55px;
+    height: 55px;
+
+    border-radius: 15px;
+    background: #dff4ef;
+    color: #4aa89c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.kontak-item h3 {
+    color: #405451;
+    margin-bottom: 5px;
+}
+
+.kontak-item p {
+    color: #71817e;
+}
+
+
+/* Form kontak */
+
+.kontak-form {
+    flex: 1;
+
+    background: #f7fbfa;
+    padding: 35px;
+    border-radius: 22px;
+}
+
+.kontak-form h2 {
+    margin-bottom: 25px;
+}
+
+.kontak-form .btn-daftar {
+    border: none;
+}
+
+
+/* Tampilan HP */
+
+@media (max-width: 768px) {
+
+    .kontak-header {
+        padding: 60px 5% 40px;
+    }
+
+    .kontak-header h1 {
+        font-size: 36px;
+    }
+
+    .kontak-section {
+        padding: 45px 5% 70px;
+    }
+
+    .kontak-container {
+        flex-direction: column;
+    }
+
+    .kontak-info,
+    .kontak-form {
+        width: 100%;
+    }
+
+    .kontak-form {
+        padding: 25px 20px;
+    }
+
+}
+
+/* Image Semarang */
+
+.health-icon img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.nav-logo {
+    width: 50px;  
+    height: 50px;
+    object-fit: contain;
+}
+.logo {
+    display: flex;
+    align-items: center; 
+    gap: 0px;       
+}
+
+/* Pesanan Berhasil */
+.success-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5faf9;
+    padding: 20px;
+}
+
+.success-card {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #dff4ef;
+    color: #4aa89c;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.success-card h1 {
+    color: #263b39;
+    margin-bottom: 15px;
+}
+
+.success-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+/* Animasi halaman sukses */
+
+.success-card {
+    animation: muncul 0.7s ease-out;
+}
+
+.success-icon {
+    animation: centang 0.6s ease-out 0.3s both;
+}
+
+.success-card .btn-daftar {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.success-card .btn-daftar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes centang {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#btnKirim {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#btnKirim:hover {
+    transform: translateY(-2px);
+}
+
+#btnKirim.loading {
+    opacity: 0.8;
+    cursor: wait;
+    transform: scale(0.98);
+}
+
+#btnKirim.loading #teksKirim {
+    visibility: hidden;
+}
+
+#btnKirim.loading::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 3px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -9px;
+    margin-top: -9px;
+    animation: putar 0.7s linear infinite;
+}
+
+@keyframes putar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* hapus admin */
+
+.admin-container {
+    max-width: 95% !important; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    background: white;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    background: #4aa89c;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.admin-table td {
+    color: #263b39;
+    white-space: nowrap; 
+}
+
+.admin-table td.wrap-text {
+    white-space: normal !important;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.admin-table tr:nth-child(even) {
+    background: #f5faf9;
+}
+
+.admin-table tr:hover {
+    background: #eaf6f3;
+}
+
+.btn-hapus {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    background: #d9534f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.btn-hapus:hover {
+    background: #c9302c;
+}
+
+.admin-section-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #263b39; 
+    font-size: 20px;
+    font-weight: 600;
+}

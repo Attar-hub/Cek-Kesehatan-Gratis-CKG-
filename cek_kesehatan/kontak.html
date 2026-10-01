@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontak - SehatBersama</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="./image/logo-semarang.png" alt="Logo" class="nav-logo">
+            Sehat<span>Bersama</span>
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="layanan.html">Layanan</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Header Kontak -->
+    <section class="kontak-header">
+
+        <p class="small-title">
+            HUBUNGI KAMI
+        </p>
+
+        <h1>
+            Ada Pertanyaan?
+            <span>Hubungi Kami</span>
+        </h1>
+
+        <p>
+            Jika membutuhkan informasi lebih lanjut mengenai
+            program cek kesehatan gratis, silakan hubungi kami.
+        </p>
+
+    </section>
+
+
+    <!-- Informasi Kontak -->
+    <section class="kontak-section">
+
+        <div class="kontak-container">
+
+
+            <!-- Informasi -->
+            <div class="kontak-info">
+
+                <h2>
+                    Informasi Kontak
+                </h2>
+
+                <div class="kontak-item">
+
+                    <div class="kontak-icon">
+                        +
+                    </div>
+
+                    <div>
+                        <h3>Lokasi</h3>
+                        <p>Semarang, Jawa Tengah</p>
+                    </div>
+
+                </div>
+
+
+                <div class="kontak-item">
+
+                    <div class="kontak-icon">
+                        @
+                    </div>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>aryantawirattar@email.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="kontak-item">
+
+                    <div class="kontak-icon">
+                        ☎
+                    </div>
+
+                    <div>
+                        <h3>Telepon</h3>
+                        <p>0813-3765-1955</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Form Kontak -->
+            <div class="kontak-form">
+
+                <h2>
+                    Kirim Pesan
+                </h2>
+
+               <form action="proses_pesan.php" method="POST">
+
+    <div class="form-group">
+        <label for="nama-kontak">Nama</label>
+
+        <input
+            type="text"
+            id="nama-kontak"
+            name="nama"
+            placeholder="Masukkan nama"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="email-kontak">Email</label>
+
+        <input
+            type="email"
+            id="email-kontak"
+            name="email"
+            placeholder="Masukkan email"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="pesan">Pesan</label>
+
+        <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            placeholder="Tulis pesan kamu..."
+            required
+        ></textarea>
+    </div>
+
+    <button
+    type="submit"
+    class="btn-daftar"
+    id="btnKirim">
+    <span id="teksKirim">Kirim Pesan</span>
+    <script>
+    const form = document.querySelector("form");
+    const tombol = document.getElementById("btnKirim");
+    form.addEventListener("submit", function () {
+        tombol.classList.add("loading");
+        tombol.disabled = true;
+    });
+    </script>
+    </button>
+</form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
